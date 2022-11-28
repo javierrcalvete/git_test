@@ -10,8 +10,48 @@
 <body>
     <h1>Homepage</h1>
     <script>
+        function add7(a) {
+            return a+7;
+        };
+         function multiply(num1,num2){
+            return num1 * num2 ;
+         } 
+        function capitalize(palabra){
+            let primeraLetra = palabra.charAt(0);
+            let primerCap = primeraLetra.toUpperCase();
+            let restoPalabra =palabra.substr(1);
+            let palabraLow = restoPalabra.toLowerCase()
+            let resultado = primerCap + palabraLow;
+
+            return resultado;
+        }
+
+        function lastLetter(a){
+            let largoA = a.length;
+            let ultimaLetra = a.charAt(largoA -1 );
+            return(ultimaLetra);
+        }
+         
+       let answer = parseInt(prompt(`Please enter a numbre`));
+       for (let i = 1; i <= answer; i++) {
+
+        ( i % 3 === 0 && i % 5 === 0) ? console.log(`FizzBuzz`) :
+
+        (i % 3 === 0) ?     console.log(`Fizz`) :
+           
+        (i % 5 === 0) ?  console.log (`Buzz`) :
+
         
+
+        console.log(i);
+
+        }
+        
+       
+
     </script>
-    
+    <button>
+    Press me
+    </button>
 </body>
 </html>

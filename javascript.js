@@ -1,1 +1,1 @@
-console.log(23 + 92);
+let func = (1 + 2)
